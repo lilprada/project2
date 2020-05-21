@@ -1,3 +1,4 @@
+```json
 {
   "engines": {
     "node": "12.16.2"
@@ -15,3 +16,6 @@
   "author": "",
   "license": "ISC"
 }
+```
+
+remember ur engines or it won't work! make sure you have "start"!
