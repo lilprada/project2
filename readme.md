@@ -19,3 +19,14 @@
 ```
 
 remember ur engines or it won't work! make sure you have "start"!
+
+
+when i want files to go to github, 'git push origin master'
+
+when i want files to go to heroku, 'git push heroku master'
+
+
+on local:
+    -make some changes
+    -git add -A
+    git commit -m ""
