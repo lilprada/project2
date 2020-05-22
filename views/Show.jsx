@@ -18,9 +18,10 @@ class Show extends React.Component {
                 <h1>item</h1>
                 <p>
                     {name}<br/>
-                    {brand}
-                    {img}
-                    {readyToWear}
+                    {brand}<br/>
+                    <img src={img}/>
+                    {readyToWear ? `Wear Her!` : `She dirty!`}<br/>
+                    <a href={`/closet/edit/${this.props.clothing._id}`}>edit item</a>
                 </p>
             </div>
         )

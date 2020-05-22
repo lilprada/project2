@@ -9,30 +9,25 @@ const Layout = require('./Layout.jsx')
 
 class Index extends React.Component {
     render() {
-        const { clothes } = this.props
+        const { closet } = this.props
         return (
             <Layout>
                 <h1>the closet</h1>
                 <nav>
                     <p><a href="/enter">go back</a></p>
                     <h1> add item</h1>
-                    <form 
-                    action="/closet/new" method="post">
-                        <input type="text" name="name"/>
-                        <div>
-                    <input type="submit" value="Create item"/>
-                </div>
-                    </form>
+                    <a href="/closet/new">new purchase</a>
+                    
                 </nav>
                 <ul>
                     {
-                        clothes.map((clothing, i) => {
+                        closet.map((clothing, i) => {
                             console.log(clothing._id)
                             return (
                                 <li> 
                                     {clothing.name}<br/>
                                     {clothing.brand}<br/>
-                                    {clothing.image}
+                                    <a href={`/closet/${clothing._id}`}><img src={clothing.img}/></a>
                                 </li>
                             )
                         })

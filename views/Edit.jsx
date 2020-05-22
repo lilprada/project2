@@ -7,13 +7,13 @@ class Edit extends React.Component {
             <div>
                 <h1>edit page</h1>
                 <form action={`/closet/edit/${clothing._id}?_method=put`} method="POST">
-                    name: <input type="text" name="name" value={fruit.name}/>
+                    name: <input type="text" name="name" value={clothing.name}/>
                     <br/>
-                    brand: <input type="text" name="brand" value={fruit.color}/>
+                    brand: <input type="text" name="brand" value={clothing.brand}/>
                     <br/>
-                    ready to wear?: <input type="checkbox" name="readyToWear" checked={fruit.readyToWear ? 'checked' : ''}/>
+                    ready to wear?: <input type="checkbox" name="readyToWear" checked={clothing.readyToWear ? 'checked' : ''}/>
                     <br/>
-                    <input type ="submit" name="" value="make changes"/>
+                    <input type ="submit" value="make changes"/>
                 </form>
             </div>
         )

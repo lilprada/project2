@@ -15,7 +15,7 @@ const clothingSchema = new Schema({
 })
 
 //create model from schema
-const Clothing = mongoose.model('cltohing', clothingSchema)
+const Clothing = mongoose.model('clothing', clothingSchema)
 
 //export
 module.exports = Clothing;
