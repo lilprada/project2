@@ -4,7 +4,7 @@ const Layout = (props) => {
     return (
         <html>
             <head>
-            <link rel="stylesheet" type="./public/style.css"/>
+            <link rel="stylesheet" href="/style.css"/>
                 <title>closet closet </title>
             </head>
             <body>

@@ -1,18 +1,21 @@
 const React = require('react')
+const Layout = require('../Layout.jsx')
 
 class LoginUser extends React.Component {
     render() {
         return (
-            <div>
-                <h1>LOG IN PAGE</h1>
+            <Layout>
+                <h1 id="login-title">hello again</h1>
+                <h2 id="login-text">love your top. is that new?</h2>
                 <form action="/sessions" method="POST">
-                    username: <input type="text" name="username"/>
+                    <p id="login-prompt">username: <input type="text" name="username"/>
                     <br/>
-                    password: <input type="password" name="password"/>
+                    password: <input type="password" name="password"/></p>
                     <br/>
-                    <input type="submit" value="login"/>
+                    <input type="submit" value="login" id="login-btn"/>
+                    <a href="/"><p id="return-home">return</p></a>
                 </form>
-            </div>
+            </Layout>
         )
     }
 }

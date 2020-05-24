@@ -14,7 +14,7 @@ class Index extends React.Component {
             <Layout>
                 <h1>laundry room</h1>
                 <nav>
-                    <p><a href="/enter">go back</a></p>
+                    <p><a href="/closet/enter">go back</a></p>
                     <h1> add item</h1>
                     <form 
                     action="/closet/new" method="post">

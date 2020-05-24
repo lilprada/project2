@@ -3,6 +3,7 @@
 //////////////////////////////////
 
 const React = require('react');
+const Layout = require('./Layout.jsx')
 
 class Show extends React.Component {
     render() {
@@ -12,15 +13,21 @@ class Show extends React.Component {
         
         
         return (
-            <div>
-                <h1 id="enter_header">clothing clothing</h1><br/>
+            <Layout>
+                <body>
+                <h1 id="enter-header">the<strong>closet</strong></h1><br/>&nbsp;
                 {this.props.username ? logout : ""}
-
-                <h2><a href="/closet" id="entry-option">closet</a></h2>
+            <div class="nav-background">
+                <div class="closet-background">
+                <h2><a href="/closet" id="closet-option">closet</a></h2>
+                </div>
                 <br/>
-                <h2><a href="/closet/laundry" id="entry-option">laundry</a></h2>
-                
-            </div>
+                <div class="laundry-background">
+                <h2><a href="/closet/laundry" id="laundry-option">laundry</a></h2>
+                </div>
+            </div> 
+            </body> 
+            </Layout>
         )
     }
 }

@@ -1,18 +1,22 @@
 const React = require('react')
+const Layout = require('../Layout.jsx')
 
 class NewUser extends React.Component {
     render() {
         return (
-            <div>
-                <h1>New user</h1>
+            <Layout>
+                <h1 id="new-user-title">welcome</h1>
+                <h2 id="create-acct">create an account with us</h2>
                 <form action="/user" method="POST">
-                    username: <input type="text" name="username"/>
+
+                    <p id="new-acct-text">username: <input type="text" name="username"/>
                     <br/>
-                    password: <input type="text" name="password"/>
+                    password: <input type="text" name="password"/></p>
                     <br/>
-                    <input type="submit" value="create user"/>
+                    <input type="submit" value="create user" id="submit-new-btn"/>
+                    <a href="/"><p id="return-home">return</p></a>
                 </form>
-            </div>
+            </Layout>
         )
     }
 }

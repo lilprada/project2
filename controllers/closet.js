@@ -50,7 +50,7 @@ closetControl.get('/', isAuthenticated, (req, res) => {
   //create route
 closetControl.post('/', (req, res) => {
     // Use Model to create Fruit Document
-    Clothing.create(req.body, (error, createdFruit) => {
+    Clothing.create(req.body, (error, createdClothing) => {
         // Once created - respond to client
         res.redirect('/closet');
     });

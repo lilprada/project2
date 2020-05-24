@@ -5,7 +5,8 @@ const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
 const closetControl = require('./controllers/closet.js');
-
+const Clothing = require('./models/closet.js')
+require('dotenv').config()
 const userController = require('./controllers/user_controller.js')
 const User = require('./models/users.js')
 const session = require('express-session')
@@ -37,6 +38,11 @@ app.use(express.json())
 app.use(methodOverride('_method'))
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(session({
+    secret: process.env.SECRET, 
+    resave: false, 
+    saveUninitialized: false
+}))
 
 
 //controllers

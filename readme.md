@@ -34,18 +34,10 @@ on local:
 
 
 
-MOST RECENT ERROR: 
+WHAT TO WORK ON NEXT: 5/24/2020 3:40PM
 
-5/23/2020 8:13PM
-TypeError: Cannot read property 'currentUser' of undefined
---------unsolved!
-note: new user is being logged but but printing twice before forcing error
-    i.e. :   username: 'sss',
-  password: '$2b$10$E9fUaktGXtzFoeuKYnpY/.phm/KC4UsQYDwb3ZJ4fVb4qKoJDsTHS'
-}
-{
-  _id: 5ec9b76ff9da8befc9bc454c,
-  username: 'sss',
-  password: '$2b$10$E9fUaktGXtzFoeuKYnpY/.phm/KC4UsQYDwb3ZJ4fVb4qKoJDsTHS',
-  __v: 0
-}
+-pushing items to Closet or Laundry depending on if "ready to wear?" is selected during Create Item phase
+
+-styling Close Index, Laundry Index, Add Item page, Edit Item page
+
+-how to push items from Laundry > Closet and vice versa depending on whether Ready To Wear? is selected/deselected

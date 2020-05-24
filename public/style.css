@@ -1,4 +1,7 @@
+/* ///////////////////// */
 /* index html cover page */
+/* ///////////////////// */
+
 #welcome-title {
     font-size: 8vh;
     animation-name: spin, depth;
@@ -62,7 +65,196 @@ strong {
 }
 
 
+
+
+/* ///////////// */
+/* new user page */
+/* ///////////// */
+
+#new-user-title {
+    font-family: 'Mukta', sans-serif;
+    position: absolute;
+    font-size: 7vh;
+    text-shadow: 1px 1px rgb(206, 206, 206), 2px 2px rgb(206, 206, 206), 3px 3px rgb(206, 206, 206);
+    top: 28%;
+    left: 44%;
+}
+#create-acct {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
+    font-size: 2.38vh;
+    text-transform: uppercase;
+    position: absolute;
+    top: 44%;
+    left: 43.4%;
+}
+#new-acct-text, #submit-new-btn {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    position: absolute;
+    left: 43.6%;
+    top: 48.5%;
+    font-size: 1.7vh;
+}
+#submit-new-btn {
+    top: 61%;
+    left: 48.1%;
+    cursor: pointer;
+}
+#return-home {
+    position: absolute;
+    font-size: 1.8vh;
+    top: 6%;
+    left: 6%;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 50px;
+    padding: 0px 10px;
+    transition: 1s;
+}
+#return-home:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/* //////////// */
+/*  log in page */
+/* //////////// */
+
+#login-title {
+    font-family: 'Mukta', sans-serif;
+    position: absolute;
+    font-size: 7vh;
+    text-shadow: 1px 1px rgb(206, 206, 206), 2px 2px rgb(206, 206, 206), 3px 3px rgb(206, 206, 206);
+    top: 28%;
+    left: 42.5%;
+}
+#login-text {
+        font-family: 'Mukta', sans-serif;
+        font-weight: 200;
+        font-size: 2.38vh;
+        text-transform: uppercase;
+        position: absolute;
+        top: 44%;
+        left: 43.4%;
+}
+#login-prompt, #login-btn {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    position: absolute;
+    left: 43.4%;
+    top: 48.5%;
+    font-size: 1.7vh;
+}
+#login-btn {
+    top: 61%;
+    left: 49.1%;
+    cursor: pointer;
+}
+#return-home {
+    position: absolute;
+    font-size: 1.8vh;
+    top: 6%;
+    left: 6%;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 50px;
+    padding: 0px 10px;
+    transition: 1s;
+}
+#return-home:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* ////////////////////////////// */
 /* closet vs laundry page (show1) */
+/* ////////////////////////////// */
+
+
+body {
+    height: 100%;
+    margin: 0;
+}
+#enter-header {
+    position: absolute;
+    top: 5.6%;
+    left: 45%;
+    font-size: 4vh;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
+    text-shadow: 1px 1px rgb(146, 146, 146), 2px 2px rgb(224, 223, 223);
+}
+.nav-background {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#closet-option, #laundry-option {
+    text-decoration: none;
+    position: absolute;
+    top: 37%;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 8vh;
+    font-weight: 800;
+}
+#closet-option {
+    left: 36%;
+    color: black;
+    text-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white;
+}
+#closet-option:hover {
+    animation: blinkTextReverse .2s infinite;
+}
+#laundry-option {
+    right: 32%;
+    color: white;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black;
+}
+ #laundry-option:hover {
+    animation: blinkText .2s infinite;
+ }
+.closet-background, .laundry-background {
+    position: relative;
+    height: 400px;
+    margin: 110px 0px;
+    width: 705px;
+    box-shadow: 0px 0px 5px 3px black;
+}
+.closet-background{
+    background-image: url("closet.png");
+    background-position: center;
+}
+.closet-background:hover {
+    background-image: url("closet.gif");
+    background-position: center;
+}
+.laundry-background {
+    background-image: url("laundry.png");
+    background-position: center;
+}
+.laundry-background:hover {
+    background-image: url("laundry.gif");
+    background-position: center;
+}
 
 
 
@@ -85,3 +277,29 @@ strong {
   }
   /* spinnign text sourced from: https://stackoverflow.com/questions/30872773/css-only-3d-spinning-text */
 
+
+@keyframes blinkText {
+    0%{     color: #000;
+            text-shadow: 1px 1px white, 2px 2px white;   }
+    49%{    color: #000; 
+            text-shadow: 1px 1px white, 2px 2px white;}
+    60%{    color: white; 
+            text-shadow: 1px 1px black, 2px 2px black, 3px 3px black;}
+    99%{    color: white;  
+        text-shadow: 1px 1px black, 2px 2px black, 3px 3px black;}
+    100%{   color: #000;    
+            text-shadow: 1px 1px white, 2px 2px white;}
+}
+
+@keyframes blinkTextReverse {
+    0%{     color: white;
+            text-shadow: 1px 1px black, 2px 2px black;    }
+    49%{    color: white; 
+            text-shadow: 1px 1px black, 2px 2px black;}
+    60%{    color: black; 
+            text-shadow: 1px 1px white, 2px 2px white;}
+    99%{    color: black;  
+        text-shadow: 1px 1px white, 2px 2px white;}
+    100%{   color: white;    
+            text-shadow: 1px 1px black, 2px 2px black;}
+}
