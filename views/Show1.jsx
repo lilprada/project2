@@ -1,8 +1,6 @@
-////////////////////////////////////////
-//             ENTER PAGE             //
-////////////////////////////////////////
-
-
+//////////////////////////////////
+//    CLOSET vs LAUNDRY PAGE    //
+//////////////////////////////////
 
 const React = require('react');
 
@@ -11,10 +9,7 @@ class Show extends React.Component {
         const logout = (<form action="/sessions/?_method=delete" method="post">
             <input type="submit" value="logout"/>
         </form>)
-        // const name = this.props.fruit.name;
-        // const color = this.props.fruit.color;
-        // const readyToEat = this.props.fruit.readyToEat;
-        // destructuring
+        
         
         return (
             <div>

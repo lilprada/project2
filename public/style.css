@@ -1,0 +1,87 @@
+/* index html cover page */
+#welcome-title {
+    font-size: 8vh;
+    animation-name: spin, depth;
+    font-family: 'Mukta', sans-serif;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    position: absolute;
+    left: 41.5%;
+    top: 32%;
+    font-weight: 300;
+}
+strong {
+    text-transform: uppercase;
+}
+#enter-button {
+    font-size: 2.5vh;
+    position: absolute;
+    text-decoration: none;
+    left: 47.2%;
+    top: 52%;
+    background-color: rgb(206, 206, 206);
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    padding: 0px 20px;
+    border-radius: 50px;
+    border: 3px solid rgb(206, 206, 206);
+    color: white;
+    transition: 1s;
+}
+#enter-button:hover {
+    background-color: black;
+}
+#unregistered {
+    position: absolute;
+    font-size: 2vh;
+    bottom: 8%;
+    right: 9.5%;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+}
+#sign-up {
+    position: absolute;
+    font-size: 1.8vh;
+    bottom: 6%;
+    right: 10.25%;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 50px;
+    padding: 0px 10px;
+    transition: 1s;
+}
+#sign-up:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* closet vs laundry page (show1) */
+
+
+
+
+/* ///////// */
+/* keyframes */
+/* ///////// */
+
+
+  @keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(-360deg); }
+  }
+  @keyframes depth {
+    0% { text-shadow: 0 0 black; }
+    25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+    50% { text-shadow: 0 0 black; }
+    75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+    100% { text-shadow: 0 0 black; }
+  }
+  /* spinnign text sourced from: https://stackoverflow.com/questions/30872773/css-only-3d-spinning-text */
+

@@ -21,7 +21,7 @@ const isAuthenticated = (req, res, next) => {
 
 
 //index route to closet, from Show1
-app.get('/closet', isAuthenticated, (req, res) => {
+closetControl.get('/', isAuthenticated, (req, res) => {
     // Use Fruits model to get all Fruits
     Clothing.find({}, (error, allCloset) => {
         res.render('Index', {
@@ -31,8 +31,8 @@ app.get('/closet', isAuthenticated, (req, res) => {
     });
   });
   
-  //index route to laundry, from Show1
-  app.get('/closet/laundry', (req, res) => {
+//index route to laundry, from Show1
+ closetControl.get('/laundry', (req, res) => {
     // Use Fruits model to get all Fruits
     Clothing.find({}, (error, allLaundry) => {
         res.render('Index1', {
@@ -42,13 +42,13 @@ app.get('/closet', isAuthenticated, (req, res) => {
     });
   });
   
-  //new route
-  app.get('/closet/new', (req, res) => {
+//new route
+ closetControl.get('/new', (req, res) => {
     res.render('New')
   })
   
   //create route
-  app.post('/closet', (req, res) => {
+closetControl.post('/', (req, res) => {
     // Use Model to create Fruit Document
     Clothing.create(req.body, (error, createdFruit) => {
         // Once created - respond to client
@@ -63,26 +63,26 @@ app.get('/closet', isAuthenticated, (req, res) => {
   
   
   //delete route
-  app.delete('closet/:id', (req, res) => {
+closetControl.delete('/:id', (req, res) => {
     Clothing.findByIdAndRemove(req.params.id, (err, data) => {
         res.redirect('/closet')
     })
   })
   
-  //show route, 2nd page
-  app.get('/enter', (req, res) => {
+//show route, 2nd page
+closetControl.get('/enter', (req, res) => {
     res.render('Show1')
   })
-  
-  app.get('/closet/:id', (req, res) => {
+//show route, closet index
+closetControl.get('/:id', (req, res) => {
     Clothing.findById(req.params.id, (error, foundClothing) => {
         res.render('Show', {
             clothing: foundClothing
         });
     });
   });
-  
-  app.get('/closet/laundry/:id', (req, res) => {
+//show route, laundry index
+closetControl.get('/laundry/:id', (req, res) => {
     Clothing.findById(req.params.id, (error, foundClothing) => {
             res.render('Show', {
             clothing: foundClothing
@@ -92,17 +92,16 @@ app.get('/closet', isAuthenticated, (req, res) => {
   
   
   
-  //edit route ((for closet))
-  app.get('/closet/edit/:id', (req, res) => {
+//edit route ((for closet))
+ closetControl.get('/edit/:id', (req, res) => {
     Clothing.findById(req.params.id, (error, foundClothing) => {
         res.render('Edit', {
             clothing: foundClothing
         })
     })
   })
-  
-  //edit route ((for laundry?))
-  app.get('/closet/laundry/edit/:id', (req, res) => {
+//edit route ((for laundry?))
+closetControl.get('/laundry/edit/:id', (req, res) => {
     Clothing.findById(req.params.id, (error, foundClothing) => {
       res.render('Edit', {
         clothing: foundClothing
@@ -111,8 +110,8 @@ app.get('/closet', isAuthenticated, (req, res) => {
   })
   
   
-  //update route ((for closet))
-  app.put('/closet/edit/:id', (req, res) => {
+//update route ((for closet))
+ closetControl.put('/edit/:id', (req, res) => {
     if (req.body.readyToWear === 'on') {
         req.body.readyToWear = true;
     } else {
@@ -123,8 +122,8 @@ app.get('/closet', isAuthenticated, (req, res) => {
     })
   })
   
-  //update route ((for laundry?))
-  app.put('/closet/laundry/edit/:id', (req, res) => {
+//update route ((for laundry?))
+closetControl.put('/laundry/edit/:id', (req, res) => {
     if (req.body.readyToWear === 'off') {
         req.body.readyToWear = false;
     } else {
@@ -139,5 +138,5 @@ app.get('/closet', isAuthenticated, (req, res) => {
 
   
 
-  //export
-  module.exports = closetControl;
+//export
+module.exports = closetControl;

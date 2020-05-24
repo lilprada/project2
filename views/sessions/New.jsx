@@ -4,7 +4,7 @@ class LoginUser extends React.Component {
     render() {
         return (
             <div>
-                <h1>New user</h1>
+                <h1>LOG IN PAGE</h1>
                 <form action="/sessions" method="POST">
                     username: <input type="text" name="username"/>
                     <br/>
