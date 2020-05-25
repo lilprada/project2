@@ -12,8 +12,8 @@ class New extends React.Component {
             
               <div id="new-form">
                 <form action="/closet" method="POST">
-                  name:  <input type="text" name="name" /><br/>
                   brand: <input type="text" name="brand" /><br/>
+                  name:  <input type="text" name="name" /><br/>
                   image: <input type="text" name="img" placeholder="       insert URL here"/><br/>
                   
                   top: <input type="checkbox" name="top"/>
