@@ -34,10 +34,16 @@ on local:
 
 
 
-WHAT TO WORK ON NEXT: 5/24/2020 3:40PM
+WHAT TO WORK ON NEXT: 5/25/2020 2:32AM
+
+-figure out what's going on with Log Out button!
 
 -pushing items to Closet or Laundry depending on if "ready to wear?" is selected during Create Item phase
 
--styling Close Index, Laundry Index, Add Item page, Edit Item page
+****ISSUE WITH "MAP" BEING UNDEFINED ON LAUNDRY PAGE?****
+
+****ISSUE WITH TEXT SHIFTING ON EACH SHOW PAGE DEPENDING ON LENGTH OF NAME DESPITE POSITION BEING ABSOLUTE?*****
+
+-styling Laundry Index (((JUST SAME AS CLOSET INDEX EXCEPT FOR TITLE)))
 
 -how to push items from Laundry > Closet and vice versa depending on whether Ready To Wear? is selected/deselected

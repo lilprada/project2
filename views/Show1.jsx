@@ -16,7 +16,9 @@ class Show extends React.Component {
             <Layout>
                 <body>
                 <h1 id="enter-header">the<strong>closet</strong></h1><br/>&nbsp;
+                <div id="logout-btn">
                 {this.props.username ? logout : ""}
+                </div>
             <div class="nav-background">
                 <div class="closet-background">
                 <h2><a href="/closet" id="closet-option">closet</a></h2>

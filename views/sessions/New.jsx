@@ -10,7 +10,8 @@ class LoginUser extends React.Component {
                 <form action="/sessions" method="POST">
                     <p id="login-prompt">username: <input type="text" name="username"/>
                     <br/>
-                    password: <input type="password" name="password"/></p>
+                    password: <input type="password" name="password"/>
+                    </p>
                     <br/>
                     <input type="submit" value="login" id="login-btn"/>
                     <a href="/"><p id="return-home">return</p></a>

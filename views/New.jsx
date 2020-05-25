@@ -1,19 +1,31 @@
 const React = require('react');
+const Layout = require('./Layout.jsx')
 
 class New extends React.Component {
     render() {
       return (
-          <div>
-              <h1>new clothing item</h1>
-              <form action="/closet" method="POST">
-                  name: <input type="text" name="name" /><br/>
+          <Layout>
+            <div id="new-item-info">
+              <h1 id="enter-header">the<strong>closet</strong></h1>
+              <h2 id="new-piece-text">got a new piece?</h2>
+              <h3 id="create-new-title">add it to your inventory</h3>
+            
+              <div id="new-form">
+                <form action="/closet" method="POST">
+                  name:  <input type="text" name="name" /><br/>
                   brand: <input type="text" name="brand" /><br/>
-                  image: <input type="text" name="img" /><br/>
-                  <div>
-                    <input type="submit" value="Create item"/>
+                  image: <input type="text" name="img" placeholder="       insert URL here"/><br/>
+                  
+                  top: <input type="checkbox" name="top"/>
+                  bottom: <input type="checkbox" name="bottom"/>
+                  other: <input type="checkbox" name="other"/><br/>
+                  ready to wear?: <input type="checkbox" name="readyToWear"/>
+                  
+                  <input type="submit" value="Create item" id="create-btn"/>
+                  </form>
                 </div>
-               </form>
-          </div>);
+            </div>
+          </Layout>);
     }
   }
   
