@@ -6,12 +6,16 @@ class Edit extends React.Component {
         const { clothing } = this.props;
         return (
             <Layout>
+                <div id="return">
+                    <a href="/closet"><p id="return-home">return</p></a>
+                </div>
                 <h1 id="enter-header">the<strong>closet</strong></h1>
-                <a href="/closet/enter"><p id="return-home">return</p></a>
+                
+            <div class="edit-form">
                 <h2 id="edit-item">edit this item</h2>
                 <p id="reminder">if dirty, uncheck RTW to send to laundry<br/>
                 if clean, check RTW to send to closet</p>
-            <div class="edit-form">
+            
                 <form action={`/closet/edit/${clothing._id}?_method=put`} method="POST">
                     brand: <input type="text" name="brand" value={clothing.brand}/>
                     <br/>
