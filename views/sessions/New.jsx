@@ -5,6 +5,7 @@ class LoginUser extends React.Component {
     render() {
         return (
             <Layout>
+                <div id="login">
                 <h1 id="login-title">hello again</h1>
                 <h2 id="login-text">love your top. is that new?</h2>
                 <form action="/sessions" method="POST">
@@ -14,8 +15,12 @@ class LoginUser extends React.Component {
                     </p>
                     <br/>
                     <input type="submit" value="login" id="login-btn"/>
-                    <a href="/"><p id="return-home">return</p></a>
-                </form>
+                    </form>
+                    </div>
+                    <div id="return">
+                    <a href="/">
+                    <p id="return-home">return</p></a>
+                    </div>
             </Layout>
         )
     }
