@@ -20,17 +20,17 @@ class Index extends React.Component {
                     <h2 id="add-text">got something new?</h2>
                     <a href="/closet/new" id="add-new-btn">add new item</a>
                 </div>
-                <nav>
-                    {/* <div class="dropdown">
-                    <button class="dropbtn">TYPE</button>
+                {/* <nav>
+                    <div class="dropdown">
+                    <button class="dropbtn">filter</button>
                       <div class="dropdown-content">
-                        <a href="#">top</a>
-                        <a href="#">bottom</a>
+                        <a href="#">tops</a>
+                        <a href="#">bottoms</a>
                         <a href="#">other</a>
                       </div>
-                </div> */}
+                </div>
                     
-                </nav>
+                </nav> */}
                 <ul class="item-list">
                     {
                         closet.map((clothing, i) => {

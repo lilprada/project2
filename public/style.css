@@ -369,6 +369,9 @@ strong {
     color: white;
     transition: .3s ease-in;
 }
+
+
+
 .item-list {
     position: absolute;
     justify-content: space-around;
@@ -386,6 +389,8 @@ strong {
     height: 440px;
     width: 300px;
     margin: 10px;
+    /* border: 1px solid red; */
+    justify-content: center;
 
 }
 .item-card:hover {
@@ -399,11 +404,13 @@ strong {
     transition: .3s;
 }
 #items {
+    position: relative;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-family: 'Mukta', sans-serif;
     text-align: center;
+    line-height: 0px;
 }
 #index-img {
     max-width: 280px;
@@ -411,19 +418,18 @@ strong {
     padding: 10px;
     display: block;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 30px
 }
 #index-brand {
     font-size: 3vh;
-    margin: -40px 0;
+    /* margin: -40px 0; */
     text-shadow: 1px 1px rgb(206, 206, 206), 2px 2px rgb(206, 206, 206);
+}
+#index-brand, #index-name {
+    margin-top: 5px;
+    max-width: 280px;
+}
 
-}
-#index-name {
-    margin: 8px 0;
-    padding: 0 5px;
-    line-height: 16px;
-}
 
 
 
