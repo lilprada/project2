@@ -14,7 +14,7 @@ class Index extends React.Component {
             <Layout>
                <div id="return">
                     <a href="/closet/enter"><p id="return-home">return</p></a>
-                    </div>
+                </div>
                 <h1 id="enter-header">the<strong>laundry</strong></h1>
                 <div id="something-new">
                     <h2 id="add-text">got something new?</h2>

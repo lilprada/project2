@@ -5,6 +5,9 @@ class New extends React.Component {
     render() {
       return (
           <Layout>
+            <div id="return">
+              <a href="/closet/enter"><p id="return-home">return</p></a>
+            </div>
             <div id="new-item-info">
               <h1 id="enter-header">the<strong>closet</strong></h1>
               <h2 id="new-piece-text">got a new piece?</h2>
