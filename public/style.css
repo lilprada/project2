@@ -182,6 +182,9 @@ strong {
     font-size: 2.38vh;
     text-transform: uppercase;
 }
+#login-prompt {
+    padding-top: 8px;
+}
 #login-prompt, #login-btn {
     font-family: 'Mukta', sans-serif;
     font-weight: 200;
@@ -195,15 +198,12 @@ strong {
 
 
 
-/* ////////////////////////////// */
-/* closet vs laundry page (show1) */
-/* ////////////////////////////// */
+/* ///////////////////////////////////*/
+/*  header for everything post log-in */
+/* ////////////////////////////////// */
 
 
-body {
-    height: 100%;
-    margin: 0;
-}
+
 #enter-header {
     position: sticky;
     text-align: center;
@@ -212,23 +212,40 @@ body {
     font-weight: 200;
     text-shadow: 1px 1px rgb(146, 146, 146), 2px 2px rgb(224, 223, 223);
 }
-.nav-background {
-    display: flex;
-    justify-content: space-evenly;
 
+
+
+
+
+/* ////////////////////////////// */
+/* closet vs laundry page (show1) */
+/* ////////////////////////////// */
+
+
+
+.nav-background {
+    display: inline-flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
 }
 #closet-option, #laundry-option {
+    position: relative;
     text-decoration: none;
-    position: absolute;
-    top: 37%;
     font-family: 'Mukta', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 8vh;
+    font-size: 14vh;
     font-weight: 800;
+    /* border: 1px solid red; */
 }
 #closet-option {
-    left: 36%;
     color: black;
     text-shadow: 1px 1px white, 2px 2px white, 3px 3px white, 4px 4px white;
 }
@@ -236,7 +253,6 @@ body {
     animation: blinkTextReverse .2s infinite;
 }
 #laundry-option {
-    right: 32%;
     color: white;
     text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black;
 }
@@ -245,10 +261,14 @@ body {
  }
 .closet-background, .laundry-background {
     position: relative;
-    height: 400px;
-    margin: 110px 0px;
-    width: 705px;
+    margin-top: 100px;
+    height: 75%;
+    width: 49%;
     box-shadow: 0px 0px 5px 3px black;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .closet-background{
     background-image: url("closet.png");
@@ -314,6 +334,9 @@ body {
 /* /////////////////////// */
 /* closet page (Index.jsx) */
 /* /////////////////////// */
+
+
+
 #add-text {
     font-family: 'Mukta', sans-serif;
     font-weight: 200;
@@ -399,9 +422,13 @@ body {
 }
 
 
+
 /* ///////////////////////// */
 /* show item page (show.jsx) */
 /* ///////////////////////// */
+
+
+
 #show-img {
     position: fixed;
     top: 20%;
@@ -456,6 +483,9 @@ body {
 /* ///////////////////// */
 /*  edit page (edit.jsx) */
 /* ///////////////////// */
+
+
+
 #edit-item, #reminder {
     text-transform: uppercase;
     font-family: 'Mukta', sans-serif;
