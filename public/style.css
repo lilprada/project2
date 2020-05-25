@@ -95,6 +95,7 @@ strong {
 	left: 0;
 	right: 0;
     margin: auto;
+    padding-bottom: 50px;
 }
 #new-user-title {
     font-family: 'Mukta', sans-serif;
@@ -106,6 +107,9 @@ strong {
     font-weight: 200;
     font-size: 2.38vh;
     text-transform: uppercase;
+}
+#new-acct-text {
+    padding-top: 6px;
 }
 #new-acct-text, #submit-new-btn {
     font-family: 'Mukta', sans-serif;
