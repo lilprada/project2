@@ -7,8 +7,9 @@ const Layout = require('./Layout.jsx')
 
 class Show extends React.Component {
     render() {
-        const logout = (<form action="/sessions/?_method=delete" method="post">
-            <input type="submit" value="logout"/>
+        const logout = 
+        (<form action="/sessions/?_method=delete" method="post">
+        <input type="submit" value="logout"/>
         </form>)
         
         

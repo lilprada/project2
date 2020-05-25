@@ -12,27 +12,24 @@ class Index extends React.Component {
         const { closet } = this.props;
         return (
             <Layout>
+               <div id="return">
+                    <a href="/closet/enter"><p id="return-home">return</p></a>
+                    </div>
                 <h1 id="enter-header">the<strong>laundry</strong></h1>
-                <nav>
-                    <p><a href="/closet/enter">go back</a></p>
-                    <h1> add item</h1>
-
-                    <form 
-                    action="/closet/new" method="post">
-                        <input type="text" name="name"/>
-                        <div>
-                    <input type="submit" value="Create item"/>
+                <div id="something-new">
+                    <h2 id="add-text">got something new?</h2>
+                    <a href="/closet/new" id="add-new-btn">add new item</a>
                 </div>
-                <div class="dropdown">
+                {/* <div class="dropdown">
                     <button class="dropbtn">TYPE</button>
                       <div class="dropdown-content">
                         <a href="#">top</a>
                         <a href="#">bottom</a>
                         <a href="#">other</a>
                       </div>
-                </div>
-                    </form>
-                </nav>
+                </div> */}
+                    
+                
                 <ul>
                     {
                         closet.map((clothing, i) => {

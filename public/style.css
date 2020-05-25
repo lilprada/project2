@@ -335,24 +335,26 @@ strong {
 /* closet page (Index.jsx) */
 /* /////////////////////// */
 
-
-
+#something-new {
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    padding-top: 34px;
+    top: 0;
+    right: 0;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 5px;
+}
 #add-text {
     font-family: 'Mukta', sans-serif;
     font-weight: 200;
-    position: absolute;
-    right: 18%;
-    top: 6%;
-    text-align: center;
     text-transform: uppercase;
     font-size: 2.3vh;
     line-height: 18px;
 }
 #add-new-btn {
-    position: absolute;
-    font-size: 2vh;
-    top: 9%;
-    right: 19.5%;
+    font-size: 1.8vh;
     text-transform: uppercase;
     font-family: 'Mukta', sans-serif;
     font-weight: 400;
@@ -361,7 +363,6 @@ strong {
     border: 2px solid rgb(206, 206, 206);
     border-radius: 50px;
     padding: 0px 10px;
-    
 }
 #add-new-btn:hover {
     background-color: black;
@@ -393,7 +394,9 @@ strong {
     -ms-transform: translate(-2px, -2px);
     -o-transform: translate(-2px, -2px);
     -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px)
+    transform: translate(-2px, -2px);
+    background-color: rgb(236, 236, 236);
+    transition: .3s;
 }
 #items {
     text-decoration: none;
@@ -408,6 +411,7 @@ strong {
     padding: 10px;
     display: block;
     margin: 0 auto;
+    border-radius: 30px;
 }
 #index-brand {
     font-size: 3vh;

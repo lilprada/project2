@@ -12,11 +12,15 @@ class Index extends React.Component {
         const { closet } = this.props
         return (
             <Layout>
-                <h1 id="enter-header">the<strong>closet</strong></h1>
-                <nav>
+                <div id="return">
                     <a href="/closet/enter"><p id="return-home">return</p></a>
+                    </div>
+                <h1 id="enter-header">the<strong>closet</strong></h1>
+                <div id="something-new">
                     <h2 id="add-text">got something new?</h2>
-                    <a href="/closet/new"><p id="add-new-btn">add new item</p></a>
+                    <a href="/closet/new" id="add-new-btn">add new item</a>
+                </div>
+                <nav>
                     {/* <div class="dropdown">
                     <button class="dropbtn">TYPE</button>
                       <div class="dropdown-content">
