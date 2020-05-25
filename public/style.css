@@ -3,8 +3,8 @@
 /* ///////////////////// */
 
 #welcome-page {
-    width: 400px;
-    height: 400px;
+    width: 30%;
+    height: 30%;
     text-align: center;
     /* border: 1px solid red; */
     position: absolute;
@@ -84,42 +84,53 @@ strong {
 /* new user page */
 /* ///////////// */
 
+#new-user{
+    /* border: 1px solid red; */
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+}
 #new-user-title {
     font-family: 'Mukta', sans-serif;
-    position: absolute;
     font-size: 7vh;
     text-shadow: 1px 1px rgb(206, 206, 206), 2px 2px rgb(206, 206, 206), 3px 3px rgb(206, 206, 206);
-    top: 28%;
-    left: 44%;
 }
 #create-acct {
     font-family: 'Mukta', sans-serif;
     font-weight: 200;
     font-size: 2.38vh;
     text-transform: uppercase;
-    position: absolute;
-    top: 44%;
-    left: 43.4%;
 }
 #new-acct-text, #submit-new-btn {
     font-family: 'Mukta', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
-    position: absolute;
-    left: 43.6%;
-    top: 48.5%;
     font-size: 1.7vh;
 }
 #submit-new-btn {
-    top: 61%;
-    left: 48.1%;
     cursor: pointer;
 }
-#return-home {
+
+
+/* ////////// */
+/* return btn */
+/* ////////// */
+
+#return {
     position: absolute;
-    font-size: 1.8vh;
-    top: 6%;
-    left: 6%;
+    width: 10%;
+    height: 10%;
+    margin: 30px 0 0 80px;
+    text-align: right;
+    /* border: 1px solid red; */
+}
+#return-home {
     text-transform: uppercase;
     font-family: 'Mukta', sans-serif;
     font-weight: 400;

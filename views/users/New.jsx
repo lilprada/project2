@@ -5,6 +5,7 @@ class NewUser extends React.Component {
     render() {
         return (
             <Layout>
+                <div id="new-user">
                 <h1 id="new-user-title">welcome</h1>
                 <h2 id="create-acct">create an account with us</h2>
                 <form action="/user" method="POST">
@@ -14,8 +15,13 @@ class NewUser extends React.Component {
                     password: <input type="text" name="password"/></p>
                     <br/>
                     <input type="submit" value="create user" id="submit-new-btn"/>
-                    <a href="/"><p id="return-home">return</p></a>
-                </form>
+                    </form>
+                    </div>
+                    <div id="return">
+                    <a href="/">
+                    <p id="return-home">return</p></a>
+                    </div>
+                
             </Layout>
         )
     }
