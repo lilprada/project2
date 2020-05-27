@@ -215,8 +215,6 @@ strong {
 
 
 
-
-
 /* ////////////////////////////// */
 /* closet vs laundry page (show1) */
 /* ////////////////////////////// */
@@ -336,6 +334,7 @@ strong {
 /* /////////////////////// */
 
 #something-new {
+    position: absolute;
     width: 400px;
     height: 100px;
     position: fixed;
@@ -549,6 +548,18 @@ img {
     color: white;
 }
 
+
+/* ///////////////// */
+/*   logout button   */
+/* ///////////////// */
+
+#logout-btn {
+    position: absolute;
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+    top: 1%;
+    left: 1%;
+}
 
 
 /* ///////// */

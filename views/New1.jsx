@@ -1,12 +1,17 @@
+/////////////////////////
+//     new laundry     //
+/////////////////////////
+
+
 const React = require('react');
 const Layout = require('./Layout.jsx')
 
-class New extends React.Component {
+class New1 extends React.Component {
     render() {
       return (
           <Layout>
             <div id="return">
-              <a href="/closet"><p id="return-home">return</p></a>
+              <a href="/closet/laundry"><p id="return-home">return</p></a>
             </div>
             <div id="new-item-info">
               <h1 id="enter-header">the<strong>closet</strong></h1>
@@ -14,7 +19,7 @@ class New extends React.Component {
               <h3 id="create-new-title">add it to your inventory</h3>
             
               <div id="new-form">
-                <form action="/closet" method="POST">
+                <form action="/closet/laundry" method="POST">
                   brand: <input type="text" name="brand" /><br/>
                   name:  <input type="text" name="name" /><br/>
                   image: <input type="text" name="img" placeholder="       insert URL here"/><br/>
@@ -32,4 +37,4 @@ class New extends React.Component {
     }
   }
   
-  module.exports = New;
+  module.exports = New1;

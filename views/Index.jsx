@@ -16,6 +16,11 @@ class Index extends React.Component {
                     <a href="/closet/enter"><p id="return-home">return</p></a>
                     </div>
                 <h1 id="enter-header">the<strong>closet</strong></h1>
+
+                <form action="/sessions/?_method=delete" method="post">
+                <input type="submit" value="logout" id="logout-btn"/>
+                </form>
+                
                 <div id="something-new">
                     <h2 id="add-text">got something new?</h2>
                     <a href="/closet/new" id="add-new-btn">add new item</a>

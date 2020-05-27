@@ -6,6 +6,7 @@ const app = express ();
 const db = mongoose.connection;
 const closetControl = require('./controllers/closet.js');
 const Clothing = require('./models/closet.js')
+const Laundry = require('./models/laundry.js')
 require('dotenv').config()
 const userController = require('./controllers/user_controller.js')
 const User = require('./models/users.js')

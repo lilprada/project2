@@ -1,5 +1,5 @@
 ////////////////////////////////////////////
-//      ITEM DISPLAY PAGE (CLOSET)        //
+//       ITEM DISPLAY PAGE (LAUNDRY)      //
 ////////////////////////////////////////////
 
 
@@ -21,10 +21,6 @@ class Show extends React.Component {
                 </div>
                 <h1 id="enter-header">the<strong>closet</strong></h1>
 
-                <form action="/sessions/?_method=delete" method="post">
-                <input type="submit" value="logout" id="logout-btn"/>
-                </form>
-
                 <div class="show-item">
                 <div id="show-img">
                     <img src={img}/>
@@ -36,9 +32,6 @@ class Show extends React.Component {
                     {/* <p id="show-rtw">{readyToWear ? `no no laundry` : `good to go`}</p><br/> */}
                     <a href={`/closet/edit/${this.props.clothing._id}`}>
                     <p id="show-edit-btn">edit item</p></a>
-                {/* <form action={`/closet/laundry/${this.props.clothing._id}?_method=put`} method="POST">
-                    <input type ="submit" value="DIRTY?" id="dirty-btn"/>
-                </form> */}
                 </div>
                     {/* create button to JUST mark as worn and move to Laundry index, if not marked rtw, have it show diff text to move it to Closet? */}
                 </div>

@@ -7,19 +7,16 @@ const Layout = require('./Layout.jsx')
 
 class Show extends React.Component {
     render() {
-        const logout = 
-        (<form action="/sessions/?_method=delete" method="post">
-        <input type="submit" value="logout"/>
-        </form>)
-        
         
         return (
             <Layout>
+                {/* <form action="/sessions/?_method=delete" method="post">
+                <input type="submit" value="logout" id="logout-btn"/>
+                </form> */}
+
                 <body>
-                <h1 id="enter-header">the<strong>closet</strong></h1><br/>&nbsp;
-                <div id="logout-btn">
-                {this.props.username ? logout : ""}
-                </div>
+                <h1 id="enter-header">the<strong>closet</strong></h1>
+                
             <div class="nav-background">
                 <div class="closet-background">
                 <h2><a href="/closet" id="closet-option">closet</a></h2>
