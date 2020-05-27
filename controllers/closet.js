@@ -23,7 +23,6 @@ const isAuthenticated = (req, res, next) => {
 
 //index route to closet, from Show1
 closetControl.get('/', isAuthenticated, (req, res) => {
-    // Use Fruits model to get all Fruits
     Clothing.find({}, (error, allCloset) => {
         res.render('Index', {
             closet: allCloset,
@@ -34,7 +33,6 @@ closetControl.get('/', isAuthenticated, (req, res) => {
   
 //index route to laundry, from Show1
  closetControl.get('/laundry', (req, res) => {
-    // Use Fruits model to get all Fruits
     Clothing.find({}, (error, allLaundry) => {
         res.render('Index1', {
             laundry: allLaundry,

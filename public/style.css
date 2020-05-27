@@ -561,6 +561,10 @@ img {
     left: 1%;
     cursor: pointer;
 }
+#logout-btn:hover {
+    color: white;
+    background-color: rgb(161, 0, 0);
+}
 
 
 /* ///////// */
