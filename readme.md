@@ -36,20 +36,17 @@ on local:
 
 WHAT TO WORK ON NEXT: 5/25/2020 2:32AM
 "                   " 5/25/2020 3:23PM
-
--figure out what's going on with Log Out button!
+"                   " 5/27/2020 7:12PM
 
 -pushing items to Closet or Laundry depending on if "ready to wear?" is selected during Create Item phase
 
 -how to push items from Laundry > Closet and vice versa depending on whether Ready To Wear? is selected/deselected
 
--somethnig-new div shifting w scroll?
+-something-new div shifting w scroll?
 
+-create a way to make your closet 'public' (linkable to a friend), leave laundry private
 
-3AM THOUGHT-
-create item route for each page, separately -
--have "dirty" button on CLOSET page POST to laundry
--have "clean" button on LAUNDRY page POST to closet
-????????????????
+-work on user "accounts"
 
-make more efficient later!
+-potentially create sale page to append Closet items you're interested in selling - make "offer" buttons on all closet items that are ticked "MAYBE INTERESTED IN SELLING" so people can make offers on anything you own!
+
