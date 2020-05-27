@@ -50,3 +50,5 @@ WHAT TO WORK ON NEXT: 5/25/2020 2:32AM
 
 -potentially create sale page to append Closet items you're interested in selling - make "offer" buttons on all closet items that are ticked "MAYBE INTERESTED IN SELLING" so people can make offers on anything you own!
 
+-create a way to sort items (re: top, bottom, other - maybe oldest to newest!)
+
